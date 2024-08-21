@@ -1,3 +1,11 @@
-export default function Home() {
-  return <main className="min-h-screen"></main>;
-}
+import { ReactNode } from 'react';
+
+type Props = {
+    children: ReactNode;
+};
+
+const Home = async ({ children }: Props) => {
+    return <div>{children}</div>;
+};
+
+export default Home;

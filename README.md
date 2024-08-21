@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LLM Random Number Generation
 
-## Getting Started
+This project demonstrates the use of OpenAI's GPT-4o-mini model to generate random numbers between 0
+and 100. The project is built with Next.js and TypeScript.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   Generates random numbers using OpenAI's API.
+-   Visualizes the distribution of generated numbers.
+-   Implements a strategy to create more randomness by distracting the model with topic summaries.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Run
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository.
+2. Install dependencies: `npm install`.
+3. Create a `.env.local` file with your OpenAI API key.
+4. Run the development server: `npm run dev`.
+5. Open `http://localhost:3000` in your browser to see the results.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Implementation Details
 
-## Learn More
+-   The project includes API routes to interact with OpenAI's API and retrieve generated numbers.
+-   The frontend displays the results and visualizes the distribution using Chart.js.
 
-To learn more about Next.js, take a look at the following resources:
+## Enhancements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   Experimented with the `temperature` parameter to increase randomness.
+-   Created a method to generate numbers by counting tokens in randomly generated topic summaries.
