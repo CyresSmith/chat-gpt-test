@@ -15,10 +15,9 @@ export interface LayoutProps {
     children: ReactNode;
     numbers: ReactNode;
     summaryNumbers: ReactNode;
-    chart: ReactNode;
 }
 
-export default function RootLayout({ children, numbers, summaryNumbers, chart }: LayoutProps) {
+export default function RootLayout({ children, numbers, summaryNumbers }: LayoutProps) {
     return (
         <html lang="en">
             <body className={clsx(nunito.className, ' bg-stone-800')}>
