@@ -12,15 +12,15 @@ and 100. The project is built with Next.js and TypeScript.
 ## How to Run
 
 1. Clone the repository.
-2. Install dependencies: `npm install`.
+2. Install dependencies: `yarn`.
 3. Create a `.env.local` file with your OpenAI API key.
-4. Run the development server: `npm run dev`.
+4. Run the development server: `yarn dev`.
 5. Open `http://localhost:3000` in your browser to see the results.
 
 ## Implementation Details
 
 -   The project includes API routes to interact with OpenAI's API and retrieve generated numbers.
--   The frontend displays the results and visualizes the distribution using Chart.js.
+-   The frontend displays the results and visualizes the distribution using recharts.
 
 ## Enhancements
 
