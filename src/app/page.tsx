@@ -1,11 +1,5 @@
-import { ReactNode } from 'react';
-
-type Props = {
-    children: ReactNode;
-};
-
-const Home = async ({ children }: Props) => {
-    return <div>{children}</div>;
+const Home = async () => {
+    return <></>;
 };
 
 export default Home;
