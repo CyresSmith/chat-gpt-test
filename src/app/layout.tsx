@@ -21,10 +21,10 @@ export default function RootLayout({ children, numbers, summaryNumbers }: Layout
     return (
         <html lang="en">
             <body className={clsx(nunito.className, ' bg-stone-800')}>
-                <main className="min-h-screen flex flex-col align-middle py-10 px-36 text-slate-200 gap-10">
+                <main className="min-h-screen flex flex-col align-middle py-10  desktop:px-36 tablet:px-24 mobile:px-5 text-slate-200 gap-10">
                     <h1 className="text-4xl text-center">Random Number Generation</h1>
 
-                    <div className=" grid grid-cols-2 grid-rows-1 gap-6">
+                    <div className=" grid desktop:grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1 grid-rows-1 gap-6">
                         {numbers}
                         {summaryNumbers}
                     </div>

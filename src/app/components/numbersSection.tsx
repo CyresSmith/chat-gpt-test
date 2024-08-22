@@ -29,13 +29,18 @@ const NumbersSection = ({
     return (
         <section className="flex flex-col gap-6">
             <div>
-                <div className="grid grid-cols-2 gap-10">
+                <div
+                    className="grid
+                mobile:grid-cols-1 mobile:gap-3
+                tablet:grid-cols-1 tablet:gap-5
+                desktop:grid-cols-2 desktop:gap-10"
+                >
                     {actionButton}
 
-                    <div className="flex flex-col gap-3">
-                        <h5>Temperature:</h5>
+                    <div className="flex flex-col gap-3 mobile:content-center">
+                        <h5 className=" mobile:text-center">Temperature:</h5>
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 mobile:justify-between">
                             <Button
                                 disabled={isLoading || temperature < 0.2}
                                 onClick={() => changeTemperature(-0.1)}
